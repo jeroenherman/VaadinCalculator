@@ -5,7 +5,7 @@ import be.leerstad.calculator.business.getalimpl.Term1;
 import be.leerstad.calculator.business.getalimpl.Term2;
 import be.leerstad.calculator.service.Operation;
 
-public class Calculation {
+public class Calculation extends LifeTimeMethodObject {
     private Term1 term1;
     private Term2 term2;
     private Result result;

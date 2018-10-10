@@ -2,6 +2,8 @@ package be.leerstad.calculator.business.repository;
 
 import be.leerstad.calculator.business.Calculation;
 
+import java.sql.Date;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -15,6 +17,7 @@ public class DummyCalculationRepo implements ICalculationRepository {
 
   @Override
   public boolean add(Calculation calculation) {
+    calculation.setCreate(LocalDate.now());
     myCalculations.add(calculation);
     return true;
   }
